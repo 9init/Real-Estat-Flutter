@@ -8,6 +8,8 @@ import 'package:real_estate_mania_yt/screens/details_page.dart';
 import 'package:real_estate_mania_yt/screens/explore_page.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
 
+import '../theme/color.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -20,6 +22,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColor.primary,
       body: Builder(builder: (context) {
         // your conditions to render the widgets!
         if (_currentIndex == 0) {
@@ -43,16 +46,19 @@ class _HomePageState extends State<HomePage> {
                           children: [
                             Text(
                               "Welcome back!",
-                              style: Theme.of(context).textTheme.caption,
+                              style: Theme.of(context).textTheme.caption?.copyWith(color: Colors.white),
+
+
                             ),
                             Text(
-                              "Imran Sefat",
-                              style: Theme.of(context).textTheme.headline6,
+                              "Aboooooooood",
+                              style: Theme.of(context).textTheme.headline6?.copyWith(color: Colors.white),
+
                             ),
                           ],
                         ),
                         const Spacer(),
-                        const Icon(LineIcons.bellAlt)
+                        const Icon(LineIcons.bellAlt,color: Colors.white,)
                       ],
                     ),
                     const SizedBox(
@@ -64,7 +70,7 @@ class _HomePageState extends State<HomePage> {
                         horizontal: 8,
                       ),
                       decoration: BoxDecoration(
-                        color: Colors.grey.withOpacity(0.2),
+                        color: Colors.white.withOpacity(0.2),
                         borderRadius: BorderRadius.circular(12),
                       ),
                       child: const TextField(
@@ -96,7 +102,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                     Text(
                       "Recommendations",
-                      style: Theme.of(context).textTheme.headline6,
+                      style: Theme.of(context).textTheme.headline6?.copyWith(color: Colors.white),
                     ),
                     const SizedBox(
                       height: 30,
@@ -209,7 +215,7 @@ class RecommendationCard extends StatelessWidget {
         padding: const EdgeInsets.all(16),
         margin: const EdgeInsets.only(right: 8),
         decoration: BoxDecoration(
-          color: Colors.grey.withOpacity(0.15),
+          color: Colors.white.withOpacity(0.15),
           borderRadius: BorderRadius.circular(16),
         ),
         child: Column(
@@ -230,12 +236,12 @@ class RecommendationCard extends StatelessWidget {
             Container(
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: const Color(0xffE5CE6A),
+                color:  AppColor.mainColor,
                 borderRadius: BorderRadius.circular(16),
               ),
               child: Text(
                 "FOR SALE",
-                style: Theme.of(context).textTheme.subtitle2,
+                style: Theme.of(context).textTheme.subtitle2?.copyWith(color: Colors.white),
               ),
             ),
             const SizedBox(
@@ -245,6 +251,7 @@ class RecommendationCard extends StatelessWidget {
               propertyModel.title,
               style: Theme.of(context).textTheme.subtitle1!.copyWith(
                     fontWeight: FontWeight.bold,
+                color: Colors.white,
                   ),
             ),
             const SizedBox(
@@ -253,7 +260,7 @@ class RecommendationCard extends StatelessWidget {
             Text(
               "${propertyModel.rooms} rooms - ${propertyModel.area} square foots - ${propertyModel.floors} floors",
               style: Theme.of(context).textTheme.caption!.copyWith(
-                    fontWeight: FontWeight.bold,
+                    fontWeight: FontWeight.bold,color: Colors.white,
                   ),
             ),
           ],
@@ -287,7 +294,7 @@ class CategoryButton extends StatelessWidget {
         margin: const EdgeInsets.all(4),
         padding: const EdgeInsets.symmetric(horizontal: 12),
         decoration: BoxDecoration(
-          color: Colors.grey.withOpacity(0.15),
+          color: Colors.white.withOpacity(0.15),
           borderRadius: BorderRadius.circular(12),
         ),
         child: Row(
@@ -296,7 +303,7 @@ class CategoryButton extends StatelessWidget {
             Text(
               categoryModel.title,
               style: Theme.of(context).textTheme.subtitle1!.copyWith(
-                    fontWeight: FontWeight.w500,
+                    fontWeight: FontWeight.w500,color: Colors.white
                   ),
             ),
             Flexible(

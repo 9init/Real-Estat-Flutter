@@ -1,8 +1,11 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:line_icons/line_icon.dart';
 import 'package:line_icons/line_icons.dart';
 
 import 'package:real_estate_mania_yt/models/property_model.dart';
+
+import '../theme/color.dart';
 
 class DetailsPage extends StatelessWidget {
   final PropertyModel propertyModel;
@@ -14,6 +17,7 @@ class DetailsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor:( AppColor.primary),
       body: Stack(
         children: [
           SingleChildScrollView(
@@ -37,7 +41,7 @@ class DetailsPage extends StatelessWidget {
                             propertyModel.title,
                             style:
                                 Theme.of(context).textTheme.headline6!.copyWith(
-                                      fontWeight: FontWeight.bold,
+                                      fontWeight: FontWeight.bold,color: AppColor.textBoxColor,
                                     ),
                           ),
                           const Spacer(),
@@ -49,7 +53,7 @@ class DetailsPage extends StatelessWidget {
                             propertyModel.rating.toString(),
                             style:
                                 Theme.of(context).textTheme.subtitle1!.copyWith(
-                                      fontWeight: FontWeight.bold,
+                                      fontWeight: FontWeight.bold,color: AppColor.textBoxColor,
                                     ),
                           ),
                         ],
@@ -60,7 +64,7 @@ class DetailsPage extends StatelessWidget {
                       Text(
                         propertyModel.subTitle.toString(),
                         style: Theme.of(context).textTheme.subtitle2!.copyWith(
-                              color: Colors.black.withOpacity(0.5),
+                              color: Colors.white.withOpacity(0.5),
                             ),
                       ),
                       const SizedBox(
@@ -78,7 +82,7 @@ class DetailsPage extends StatelessWidget {
                             specWidget(
                               context,
                               LineIcons.areaChart,
-                              "${propertyModel.area} Sqft",
+                              "${propertyModel.area} m2",
                             ),
                             specWidget(
                               context,
@@ -93,7 +97,7 @@ class DetailsPage extends StatelessWidget {
                       ),
                       Text(
                         "Descriptions",
-                        style: Theme.of(context).textTheme.headline6,
+                        style: Theme.of(context).textTheme.headline6?.copyWith(color: AppColor.textBoxColor,),
                       ),
                       const SizedBox(
                         height: 12,
@@ -101,7 +105,7 @@ class DetailsPage extends StatelessWidget {
                       Text(
                         propertyModel.details,
                         style: Theme.of(context).textTheme.subtitle2!.copyWith(
-                              color: Colors.black.withOpacity(0.5),
+                              color: Colors.white.withOpacity(0.5),
                               letterSpacing: 1.1,
                               height: 1.4,
                             ),
@@ -132,11 +136,11 @@ class DetailsPage extends StatelessWidget {
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(12),
                         border: Border.all(
-                          color: Colors.black.withOpacity(0.3),
+                          color: Colors.white.withOpacity(0.3),
                         ),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(0.1),
+                            color: Colors.white.withOpacity(0.1),
                             offset: const Offset(4, 4),
                             blurRadius: 20,
                             spreadRadius: 4,
@@ -159,11 +163,11 @@ class DetailsPage extends StatelessWidget {
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(12),
                         border: Border.all(
-                          color: Colors.black.withOpacity(0.3),
+                          color: Colors.white.withOpacity(0.3),
                         ),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(0.1),
+                            color: Colors.white.withOpacity(0.1),
                             offset: const Offset(4, 4),
                             blurRadius: 20,
                             spreadRadius: 4,
@@ -184,14 +188,14 @@ class DetailsPage extends StatelessWidget {
                         padding: const EdgeInsets.all(12),
                         margin: const EdgeInsets.only(right: 8),
                         decoration: BoxDecoration(
-                          color: Colors.black,
+                          color: Colors.white,
                           borderRadius: BorderRadius.circular(12),
                           border: Border.all(
-                            color: Colors.black.withOpacity(0.3),
+                            color: Colors.white.withOpacity(0.3),
                           ),
                           boxShadow: [
                             BoxShadow(
-                              color: Colors.black.withOpacity(0.1),
+                              color: Colors.white.withOpacity(0.1),
                               offset: const Offset(4, 4),
                               blurRadius: 20,
                               spreadRadius: 4,

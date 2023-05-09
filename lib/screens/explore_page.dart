@@ -20,7 +20,7 @@ class _ExplorePageState extends State<ExplorePage> {
     return CustomScrollView(
       slivers: <Widget>[
         SliverAppBar(
-          backgroundColor: AppColor.appBgColor,
+      backgroundColor: AppColor.primary,
           pinned: true,
           snap: true,
           floating: true,
@@ -64,7 +64,8 @@ class _ExplorePageState extends State<ExplorePage> {
             padding: EdgeInsets.only(left: 15),
             child: Text(
               "Matched Properties",
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600,color: AppColor.textBoxColor,),
+
             ),
           ),
           const SizedBox(
@@ -81,6 +82,7 @@ class _ExplorePageState extends State<ExplorePage> {
               style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.w600,
+                color: AppColor.textBoxColor,
               ),
             ),
           ),
@@ -139,6 +141,7 @@ class _ExplorePageState extends State<ExplorePage> {
   }
 
   _buildBrokers() {
+
     List<Widget> lists = List.generate(
       brokers.length,
       (index) => BrokerItem(

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:real_estate_mania_yt/models/category_model.dart';
 import 'package:real_estate_mania_yt/models/property_model.dart';
+import 'package:real_estate_mania_yt/theme/color.dart';
 
 import 'details_page.dart';
 
@@ -146,7 +147,7 @@ class ExpandedRecommendationCard extends StatelessWidget {
                 Text(
                   propertyModel.title,
                   style: Theme.of(context).textTheme.headline6!.copyWith(
-                        fontWeight: FontWeight.bold,
+                        fontWeight: FontWeight.bold,color: AppColor.textBoxColor,
                       ),
                 ),
                 const Spacer(),
@@ -157,7 +158,7 @@ class ExpandedRecommendationCard extends StatelessWidget {
                 Text(
                   propertyModel.rating.toString(),
                   style: Theme.of(context).textTheme.subtitle1!.copyWith(
-                        fontWeight: FontWeight.bold,
+                        fontWeight: FontWeight.bold,color: AppColor.textBoxColor
                       ),
                 ),
               ],
@@ -168,7 +169,7 @@ class ExpandedRecommendationCard extends StatelessWidget {
             Text(
               "${propertyModel.rooms} rooms - ${propertyModel.area} square foots - ${propertyModel.floors} floors",
               style: Theme.of(context).textTheme.caption!.copyWith(
-                    fontWeight: FontWeight.bold,
+                    fontWeight: FontWeight.bold,color: AppColor.textBoxColor
                   ),
             ),
             Padding(
@@ -185,11 +186,11 @@ class ExpandedRecommendationCard extends StatelessWidget {
                           color: const Color(0xffE6CD6B),
                           borderRadius: BorderRadius.circular(12),
                           border: Border.all(
-                            color: Colors.black.withOpacity(0.1),
+                            color: Colors.white.withOpacity(0.1),
                           ),
                           boxShadow: [
                             BoxShadow(
-                              color: Colors.black.withOpacity(0.1),
+                              color: Colors.white.withOpacity(0.1),
                               offset: const Offset(0, 5),
                               blurRadius: 20,
                               spreadRadius: 4,
@@ -220,11 +221,11 @@ class ExpandedRecommendationCard extends StatelessWidget {
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(12),
                         border: Border.all(
-                          color: Colors.black.withOpacity(0.1),
+                          color: Colors.white.withOpacity(0.1),
                         ),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(0.1),
+                            color: Colors.white.withOpacity(0.1),
                             offset: const Offset(0, 5),
                             blurRadius: 20,
                             spreadRadius: 4,
