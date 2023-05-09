@@ -5,6 +5,7 @@ import 'package:real_estate_mania_yt/models/category_model.dart';
 import 'package:real_estate_mania_yt/models/property_model.dart';
 import 'package:real_estate_mania_yt/screens/category_page.dart';
 import 'package:real_estate_mania_yt/screens/details_page.dart';
+import 'package:real_estate_mania_yt/screens/explore_page.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
 
 class HomePage extends StatefulWidget {
@@ -125,9 +126,7 @@ class _HomePageState extends State<HomePage> {
           );
         } else if (_currentIndex == 2) {
           // search page
-          return const Center(
-            child: Text("Search Page"),
-          );
+          return const ExplorePage();
         } else if (_currentIndex == 3) {
           // settings page
           return const Center(
