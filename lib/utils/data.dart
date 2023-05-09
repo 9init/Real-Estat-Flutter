@@ -108,31 +108,31 @@ List categories = [
 
 var brokers = [
     {
-    "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjV8fHByb2ZpbGV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60", 
-    "name": "John Siphron", 
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNCXctiRZ8D1--pidxE1QXFCLJ5zmZRYAXfMzcZmxorg&s",
+    "name": "Ahmed Hesham",
     "type": "Broker", 
-    "description": "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document",
+    "description": "A full-service broker with personalized investment recommendations and access to a wide range of financial products.",
+    "rate": 4.5,
+  },
+  {
+    "image":"https://pbs.twimg.com/profile_images/1490500435123351552/-AiFugSG_400x400.jpg",
+    "name" : "Mahmoud Adawy",
+    "type": "Broker", 
+    "description": "An online discount broker with low fees and commission rates for self-directed investors.",
     "rate": 4, 
   },
   {
-    "image":"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fHByb2ZpbGV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
-    "name" : "Corey Aminoff",
+    "image" : "https://images.akhbarelyom.com//images/images/medium/20220616172456971.jpg",
+    "name": "Mohamed Soliman",
     "type": "Broker", 
-    "description": "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document",
-    "rate": 4, 
-  },
-  {
-    "image" : "https://images.unsplash.com/photo-1617069470302-9b5592c80f66?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Z2lybHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
-    "name": "Siriya Aminoff", 
-    "type": "Broker", 
-    "description": "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document",
+    "description": "A robo-advisor that uses AI and algorithms to provide automated investment management and personalized portfolio recommendations.",
     "rate": 4, 
   },
   {
     "image" : "https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2ZpbGV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
     "name": "Rubin Joe", 
     "type": "Broker", 
-    "description": "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document",
+    "description": "Offers commission-free trading on a wide range of assets and provides educational resources for beginners.",
     "rate": 4, 
   },
 ];
