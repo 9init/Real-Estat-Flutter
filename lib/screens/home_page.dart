@@ -6,6 +6,7 @@ import 'package:real_estate_mania_yt/models/property_model.dart';
 import 'package:real_estate_mania_yt/screens/category_page.dart';
 import 'package:real_estate_mania_yt/screens/details_page.dart';
 import 'package:real_estate_mania_yt/screens/explore_page.dart';
+import 'package:real_estate_mania_yt/screens/favourite_page.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
 
 import '../theme/color.dart';
@@ -130,9 +131,7 @@ class _HomePageState extends State<HomePage> {
           );
         } else if (_currentIndex == 1) {
           // favourite page
-          return const Center(
-            child: Text("Favourite Page"),
-          );
+          return const FavouriteScreen();
         } else if (_currentIndex == 2) {
           // search page
           return const ExplorePage();

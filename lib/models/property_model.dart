@@ -25,10 +25,10 @@ class PropertyModel {
 
 List<PropertyModel> properties = [
   PropertyModel(
-    title: 'Penthouse Villa',
-    subTitle: "St. Second Avenue 780, NY",
+    title: 'Villa With Nice View',
+    subTitle: "Al Khusus, Al Qalyubia",
     details:
-        'Est pariatur pariatur nisi cupidatat deserunt incididunt enim eiusmod do minim exercitation. Exercitation mollit enim officia cupidatat occaecat quis cillum cupidatat consectetur ad. Amet in dolore occaecat labore non anim. Laborum anim occaecat eiusmod occaecat ut sit. Est excepteur Lorem culpa deserunt anim duis quis anim ea in tempor exercitation exercitation. Veniam magna pariatur irure commodo mollit ut irure. Tempor aute consequat in labore magna sunt et commodo ut cupidatat.',
+        'Indulge in the ultimate beachfront experience with direct access to sandy shores, turquoise waters, and stunning ocean views. A perfect paradise for beach lovers seeking coastal bliss.',
     thumbnail: 'images/properties/villa2.jpeg',
     images: [
       'images/properties/villa1.jpeg',
@@ -36,33 +36,33 @@ List<PropertyModel> properties = [
       'images/properties/villa3.jpeg'
     ],
     rooms: 5,
-    area: 3000,
+    area:400,
     floors: 3,
-    price: 3000,
+    price: 10000000,
     rating: 4.3,
   ),
   PropertyModel(
-    title: 'Duplex Housing',
-    subTitle: "St. Second Avenue 780, NY",
+    title: 'Modern Villa',
+    subTitle: "Imbabah, Giza",
     details:
-        'Est pariatur pariatur nisi cupidatat deserunt incididunt enim eiusmod do minim exercitation. Exercitation mollit enim officia cupidatat occaecat quis cillum cupidatat consectetur ad. Amet in dolore occaecat labore non anim. Laborum anim occaecat eiusmod occaecat ut sit. Est excepteur Lorem culpa deserunt anim duis quis anim ea in tempor exercitation exercitation. Veniam magna pariatur irure commodo mollit ut irure. Tempor aute consequat in labore magna sunt et commodo ut cupidatat.',
+        'Step into this elegant and modern villa with its modern design, rooftop terrace and city views. Perfect for travelers from all over the world looking for a stylish and modern urban getaway. For those looking for distinction .',
     thumbnail: 'images/properties/ap4.jpeg',
     images: [
       'images/properties/ap2.jpeg',
       'images/properties/ap7.jpeg',
       'images/properties/ap6.jpeg'
     ],
-    rooms: 3,
-    area: 3500,
+    rooms: 5,
+    area: 600,
     floors: 2,
-    price: 5000,
-    rating: 4.7,
+    price: 1800000,
+    rating: 4.9,
   ),
   PropertyModel(
-    title: 'Orchard House',
-    subTitle: "St. Second Avenue 780, NY",
+    title: 'Doubelx House',
+    subTitle: "Al Wardiyan, Alexandria",
     details:
-        'Est pariatur pariatur nisi cupidatat deserunt incididunt enim eiusmod do minim exercitation. Exercitation mollit enim officia cupidatat occaecat quis cillum cupidatat consectetur ad. Amet in dolore occaecat labore non anim. Laborum anim occaecat eiusmod occaecat ut sit. Est excepteur Lorem culpa deserunt anim duis quis anim ea in tempor exercitation exercitation. Veniam magna pariatur irure commodo mollit ut irure. Tempor aute consequat in labore magna sunt et commodo ut cupidatat.',
+        'Escape to this peaceful oasis with its lush gardens, private pool, and serene ambiance. Perfect for relaxation and rejuvenation, this villa offers a secluded retreat for a tranquil getaway.',
     thumbnail: 'images/properties/ap6.jpeg',
     images: [
       'images/properties/ap4.jpeg',
@@ -70,9 +70,9 @@ List<PropertyModel> properties = [
       'images/properties/ap6.jpeg'
     ],
     rooms: 4,
-    area: 4200,
-    floors: 3,
-    price: 6000,
-    rating: 4.8,
+    area: 150,
+    floors: 2,
+    price: 6000000,
+    rating: 4.5,
   ),
 ];
