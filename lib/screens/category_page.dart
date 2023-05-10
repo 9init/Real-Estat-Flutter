@@ -16,6 +16,7 @@ class CategoryPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColor.primary,
       body: SingleChildScrollView(
         child: SafeArea(
           child: Padding(
@@ -33,11 +34,12 @@ class CategoryPage extends StatelessWidget {
                       },
                       icon: const Icon(
                         Icons.arrow_back_ios,
+                        color: AppColor.textBoxColor,
                       ),
                     ),
                     Text(
                       categoryModel.title,
-                      style: Theme.of(context).textTheme.headline6,
+                      style: Theme.of(context).textTheme.headline6?.copyWith(color: AppColor.textBoxColor),
                     ),
                   ],
                 ),
@@ -50,14 +52,17 @@ class CategoryPage extends StatelessWidget {
                     horizontal: 8,
                   ),
                   decoration: BoxDecoration(
-                    color: Colors.grey.withOpacity(0.2),
+                    color: Colors.white.withOpacity(0.2),
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: const TextField(
                     decoration: InputDecoration(
                       border: InputBorder.none,
-                      prefixIcon: Icon(LineIcons.search),
+                      prefixIcon: Icon(LineIcons.search, color: AppColor.textBoxColor),
                       hintText: "Search...",
+                      hintStyle: TextStyle(
+                        color: AppColor.textBoxColor, // change to any color you want
+                      ),
                     ),
                   ),
                 ),
@@ -69,13 +74,13 @@ class CategoryPage extends StatelessWidget {
                   children: [
                     Text(
                       "Popular",
-                      style: Theme.of(context).textTheme.headline6,
+                      style: Theme.of(context).textTheme.headline6?.copyWith(color: AppColor.textBoxColor),
                     ),
                     GestureDetector(
                       onTap: () {},
                       child: Text(
                         "See All",
-                        style: Theme.of(context).textTheme.subtitle1,
+                        style: Theme.of(context).textTheme.subtitle1?.copyWith(color: AppColor.textBoxColor),
                       ),
                     ),
                   ],

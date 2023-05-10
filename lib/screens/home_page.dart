@@ -76,8 +76,11 @@ class _HomePageState extends State<HomePage> {
                       child: const TextField(
                         decoration: InputDecoration(
                           border: InputBorder.none,
-                          prefixIcon: Icon(LineIcons.search),
+                          prefixIcon: Icon(LineIcons.search, color: AppColor.textBoxColor),
                           hintText: "Search...",
+                          hintStyle: TextStyle(
+                            color: AppColor.textBoxColor, // change to any color you want
+                          ),
                         ),
                       ),
                     ),
@@ -260,7 +263,7 @@ class RecommendationCard extends StatelessWidget {
             Text(
               "${propertyModel.rooms} rooms - ${propertyModel.area} square foots - ${propertyModel.floors} floors",
               style: Theme.of(context).textTheme.caption!.copyWith(
-                    fontWeight: FontWeight.bold,color: Colors.white,
+                    fontWeight: FontWeight.bold,color: Colors.white.withOpacity(0.5),
                   ),
             ),
           ],

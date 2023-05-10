@@ -22,7 +22,7 @@ class DetailsPage extends StatelessWidget {
         children: [
           SingleChildScrollView(
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start ,
               children: [
                 CarouselwithIndicatorDemo(
                   propertyModel: propertyModel,
@@ -56,6 +56,7 @@ class DetailsPage extends StatelessWidget {
                                       fontWeight: FontWeight.bold,color: AppColor.textBoxColor,
                                     ),
                           ),
+
                         ],
                       ),
                       const SizedBox(
@@ -105,7 +106,7 @@ class DetailsPage extends StatelessWidget {
                       Text(
                         propertyModel.details,
                         style: Theme.of(context).textTheme.subtitle2!.copyWith(
-                              color: Colors.white.withOpacity(0.5),
+                              color: Colors.white.withOpacity(0.3),
                               letterSpacing: 1.1,
                               height: 1.4,
                             ),
@@ -209,7 +210,7 @@ class DetailsPage extends StatelessWidget {
                             "BUY NOW",
                             style:
                                 Theme.of(context).textTheme.subtitle2!.copyWith(
-                                      color: Colors.white,
+                                      color: Colors.black,
                                       fontWeight: FontWeight.bold,
                                     ),
                           ),
@@ -234,9 +235,7 @@ class DetailsPage extends StatelessWidget {
           Container(
             padding: const EdgeInsets.all(12),
             decoration: const BoxDecoration(
-              color: Color(
-                0xffE7CD6B,
-              ),
+              color: AppColor.Star,
               shape: BoxShape.circle,
             ),
             child: Icon(iconData),
@@ -246,7 +245,7 @@ class DetailsPage extends StatelessWidget {
           ),
           Text(
             text,
-            style: Theme.of(context).textTheme.subtitle1,
+            style: Theme.of(context).textTheme.subtitle1?.copyWith(color: AppColor.textBoxColor),
           ),
         ],
       ),
@@ -363,7 +362,7 @@ class _CarouselwithIndicatorDemoState extends State<CarouselwithIndicatorDemo> {
                 height: _current == entry.key ? 6 : 4,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(4),
-                  color: (Theme.of(context).brightness == Brightness.dark
+                  color: (Theme.of(context).brightness == Brightness.light
                           ? Colors.white
                           : Colors.black)
                       .withOpacity(
